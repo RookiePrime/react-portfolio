@@ -1,38 +1,36 @@
+/* App CSS styling begins here */
+root {
+  --primary-color: #F7DBA7;
+  --secondary-color: #F1AB86;
+  --tertiary-color: #C57B57;
+  --quartiary-color: #1E2D2F;
+  --quintiary-color: #041F1E;
+}
+
 .App {
   text-align: center;
+  background-color: #1E2D2F;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Footer {
+  background-color: #F7DBA7;
+  height: 5vh;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header {
+  background-color: #F7DBA7;
+  height: 15vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Navigation {
+  background-color: #F1AB86;
 }
 
-.App-link {
-  color: #61dafb;
+.Project {
+  background-color: #C57B57;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  height: 80vh;
 }
