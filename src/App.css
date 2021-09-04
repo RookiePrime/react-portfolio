@@ -1,5 +1,5 @@
 /* App CSS styling begins here */
-root {
+:root {
   --primary-color: #F7DBA7;
   --secondary-color: #F1AB86;
   --tertiary-color: #C57B57;
@@ -9,28 +9,29 @@ root {
 
 .App {
   text-align: center;
-  background-color: #1E2D2F;
+  background-color: var(--quintiary-color);
 }
 
 .Footer {
-  background-color: #F7DBA7;
+  background-color: var(--primary-color);
   height: 5vh;
   width: 100%;
 }
 
 .Header {
-  background-color: #F7DBA7;
+  background-color: var(--primary-color);
   height: 15vh;
 }
 
 .Navigation {
-  background-color: #F1AB86;
+  background-color: var(--primary-color);
 }
 
 .Project {
-  background-color: #C57B57;
+  background-color: var(--secondary-color);
 }
 
-main {
+.Main {
   height: 80vh;
+  background-color: var(--tertiary-color);
 }
