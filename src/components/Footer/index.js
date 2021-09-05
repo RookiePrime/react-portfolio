@@ -1,18 +1,39 @@
 import React from 'react';
-import { Container, Image } from 'react-bootstrap';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 
 const Footer = () => {
+
+    const imageLinksArr = [
+        {
+            image: './assets/images/GitHub-Mark-64px.png',
+            link: 'https://github.com/RookiePrime',
+            alt: 'The GitHub Octocat logo'
+        },
+        {
+            image: './assets/images/Li-In-Bug.png',
+            link: 'https://www.linkedin.com/in/kiefer-levine-38844920b/',
+            alt: 'The LinkedIn logo'
+        },
+        {
+            image: './assets/images/f_logo_RGB-blue_58.png',
+            link: 'https://www.facebook.com/profile.php?id=100002973256310',
+            alt: 'The Facebook logo'
+        }
+    ];
+
     return (
-        <Container className='Footer d-flex justify-content-evenly align-items-center'>
-            <a href='https://github.com/RookiePrime'> 
-                <Image src='./assets/images/GitHub-Mark-64px.png' roundedCircle />
-            </a>
-            <a href='https://www.linkedin.com/in/kiefer-levine-38844920b/'>
-                <Image src='./assets/images/Li-In-Bug.png' />
-            </a>
-            <a href='https://www.facebook.com/profile.php?id=100002973256310'>
-                <Image src='./assets/images/f_logo_RGB-blue_58.png' />
-            </a>
+        <Container className='Footer d-flex align-items-center'>
+            <Row className='d-flex align-items-center justify-content-evenly'>
+                {imageLinksArr.map((obj, i) => {
+                    return (
+                        <Col xs={2} s={3} md={1} key={`link-${i}`}>
+                            <a href={obj.link}>
+                                <Image src={obj.image} alt={obj.alt} />
+                            </a>
+                        </Col>
+                    );
+                })}
+            </Row>
         </Container>
     );
 };

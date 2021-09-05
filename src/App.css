@@ -55,6 +55,18 @@
 /* Main styling ends here */
 
 
+/* About styling begins here */
+.About img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.About p {
+  text-align: left;
+}
+/* About styling ends here */
+
+
 /* Resume styling begins here */
 .Resume .list-group-item {
   background-color: var(--secondary-color);
@@ -75,7 +87,6 @@
 }
 
 .Footer img {
-  height: 64px;
+  width: 100%;
 }
-
 /* Footer styling ends here */
