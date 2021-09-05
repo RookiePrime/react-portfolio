@@ -8,13 +8,18 @@ import Footer from './components/Footer';
 
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 function App() {
-  const pages = [
-    <About />,
-    <Portfolio />
-  ];
-  const [pageSelected, setPageSelected] = useState(pages[0]);
+
+  const pages = {
+    about: <About />,
+    portfolio: <Portfolio />,
+    contact: <Contact />,
+    resume: <Resume />
+  }
+  const [pageSelected, setPageSelected] = useState('about');
 
   return (
     <div className="App">
@@ -23,7 +28,7 @@ function App() {
         setPageSelected={setPageSelected}
       />
       <Container className='Main'>
-        {pageSelected}
+        {pages[pageSelected]}
       </Container>
       <Footer />
     </div>

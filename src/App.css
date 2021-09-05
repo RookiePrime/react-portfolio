@@ -1,4 +1,4 @@
-/* App CSS styling begins here */
+/* General styling begins here */
 :root {
   --primary-color: #F7DBA7;
   --secondary-color: #F1AB86;
@@ -10,28 +10,72 @@
 .App {
   text-align: center;
   background-color: var(--quintiary-color);
+  color: var(--quintiary-color);
+  min-height: 100vh;
 }
+/* General styling ends here */
 
-.Footer {
-  background-color: var(--primary-color);
-  height: 5vh;
-  width: 100%;
-}
 
+/* Header styling begins here */
 .Header {
   background-color: var(--primary-color);
-  height: 15vh;
+  max-height: 26vh;
 }
+/* Header styling ends here */
 
+
+/* Navigation styling begins here */
 .Navigation {
   background-color: var(--primary-color);
+  padding-left: 30px;
 }
 
+.nav.selected {
+  background-color: var(--tertiary-color);
+}
+
+.nav a {
+  color: var(--quintiary-color);
+  font-weight: bold;
+}
+
+.nav a:hover,
+.nav a:focus {
+  color: var(--secondary-color);
+}
+/* Navigation styling ends here */
+
+
+/* Main styling begins here */
+.Main {
+  min-height: 78vh;
+  background-color: var(--tertiary-color);
+  padding: 20px;
+}
+/* Main styling ends here */
+
+
+/* Resume styling begins here */
+.Resume .list-group-item {
+  background-color: var(--secondary-color);
+}
+/* Resume styling ends here */
+
+
+/* Project styling begins here */
 .Project {
   background-color: var(--secondary-color);
 }
+/* Project styling ends here */
 
-.Main {
-  height: 80vh;
-  background-color: var(--tertiary-color);
+/* Footer styling begins here */
+.Footer {
+  background-color: var(--primary-color);
+  min-height: 8vh;
 }
+
+.Footer img {
+  height: 64px;
+}
+
+/* Footer styling ends here */

@@ -11,7 +11,7 @@ const Header = (props) => {
     return (
         <Container className='Header'>
             <Row>
-                <h1>Kiefer's Portfolio</h1>
+                <h1 className='display-1'>Kiefer's Portfolio</h1>
             </Row>
             <Row>
                 <Navigation
