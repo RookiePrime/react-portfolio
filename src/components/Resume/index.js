@@ -3,7 +3,7 @@ import { Container, Row, ListGroup } from 'react-bootstrap';
 
 const Resume = () => {
     return (
-        <Container className='Resume'>
+        <Container className='Resume Page'>
             <Row>
                 <h2>Resume</h2>
             </Row>

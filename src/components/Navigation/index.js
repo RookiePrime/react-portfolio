@@ -28,9 +28,9 @@ const Navigation = props => {
 
     function handlePageSelect(e) {
         // Gets the eventKey of the chosen nav item.
-        const selectedPage = e.target.dataset.rbEventKey
+        const selectedPage = e.target.dataset.rbEventKey;
         // Sets the state, telling the app what content to show and how to change the appearance of what we're looking at.
-        setPageSelected(selectedPage);
+        selectedPage && setPageSelected(selectedPage);
     };
 
     return (

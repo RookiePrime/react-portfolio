@@ -9,9 +9,26 @@
 
 .App {
   text-align: center;
-  background-color: var(--quintiary-color);
+  background-color: var(--quartiary-color);
   color: var(--quintiary-color);
   min-height: 100vh;
+}
+
+a {
+  color: var(--quintiary-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--tertiary-color);
+}
+
+.Page {
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
+  padding: 10px;
 }
 /* General styling ends here */
 
@@ -31,7 +48,7 @@
 }
 
 .nav.selected {
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 
 .nav a {
@@ -41,7 +58,7 @@
 
 .nav a:hover,
 .nav a:focus {
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 /* Navigation styling ends here */
 
@@ -49,7 +66,7 @@
 /* Main styling begins here */
 .Main {
   min-height: 78vh;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   padding: 20px;
 }
 /* Main styling ends here */
@@ -69,7 +86,7 @@
 
 /* Resume styling begins here */
 .Resume .list-group-item {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 /* Resume styling ends here */
 
@@ -78,6 +95,14 @@
 .Project {
   background-color: var(--secondary-color);
 }
+
+.Project img {
+  width: 100%;
+  height: 150px;
+  object-fit:cover;
+  object-position: 50% 0;
+}
+
 /* Project styling ends here */
 
 /* Footer styling begins here */

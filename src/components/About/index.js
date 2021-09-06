@@ -3,7 +3,7 @@ import { Container, Col, Image, Row } from 'react-bootstrap';
 
 const About = () => {
     return (
-        <Container className='About'>
+        <Container className='About Page shadow-lg p-2'>
             <Row>
                 <h2>About Me</h2>
             </Row>

@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-        <Container className='Contact'>
+        <Container className='Contact Page'>
             <Form>
                 <h2>Contact Me!</h2>
                 <Form.Group controlId='formBasicName'>
