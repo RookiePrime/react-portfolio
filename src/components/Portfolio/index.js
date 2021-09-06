@@ -2,42 +2,49 @@ import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import Project from '../Project';
 
+import tarokkaPrev from '../../assets/images/project_previews/tarokka.png';
+import pokecardsPrev from '../../assets/images/project_previews/pokecards.png';
+import bardicPrev from '../../assets/images/project_previews/bardic.png';
+import crunchTimePrev from '../../assets/images/project_previews/crunchtime.png';
+import techblogPrev from '../../assets/images/project_previews/techblog.png';
+import weatherPrev from '../../assets/images/project_previews/weather.png';
+
 const Portfolio = () => {
 
     const projectsArr = [
         {
             title: 'Tarokka Deck',
-            image: './assets/images/project_previews/tarokka.png',
+            image: tarokkaPrev,
             liveLink: 'https://rookieprime.github.io/tarokka-deck/',
             repoLink: 'https://github.com/RookiePrime/tarokka-deck'
         },
         {
             title: 'PokeCards',
-            image: './assets/images/project_previews/pokecards.png',
+            image: pokecardsPrev,
             liveLink: 'https://rookieprime.github.io/Juno-JS-Project-2/',
             repoLink: 'https://github.com/RookiePrime/Juno-JS-Project-2'
         },
         {
             title: 'Bardic',
-            image: './assets/images/project_previews/bardic.png',
+            image: bardicPrev,
             liveLink: 'https://bardic.herokuapp.com/',
             repoLink: 'https://github.com/FanCinco/Bardic'
         },
         {
             title: 'Crunch Time',
-            image: './assets/images/project_previews/crunchtime.png',
+            image: crunchTimePrev,
             liveLink: 'https://crunchteam04.github.io/Crunch-Time/',
             repoLink: 'https://github.com/crunchteam04/Crunch-Time'
         },
         {
             title: 'Tech Blog',
-            image: './assets/images/project_previews/techblog.png',
+            image: techblogPrev,
             liveLink: 'https://still-headland-68938.herokuapp.com/',
             repoLink: 'https://github.com/RookiePrime/tech-blog'
         },
         {
             title: 'Weather Dashboard',
-            image: './assets/images/project_previews/weather.png',
+            image: weatherPrev,
             liveLink: 'https://rookieprime.github.io/weather-dashboard/',
             repoLink: 'https://github.com/RookiePrime/weather-dashboard'
         }

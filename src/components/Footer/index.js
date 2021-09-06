@@ -1,21 +1,24 @@
 import React from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import GhLogo from '../../assets/images/link_logos/GitHub-Mark-64px.png';
+import LiLogo from '../../assets/images/link_logos/LI-In-Bug.png';
+import FbLogo from '../../assets/images/link_logos/f_logo_RGB-Blue_58.png';
 
 const Footer = () => {
 
     const imageLinksArr = [
         {
-            image: './assets/images/link_logos/GitHub-Mark-64px.png',
+            image: GhLogo,
             link: 'https://github.com/RookiePrime',
             alt: 'The GitHub Octocat logo'
         },
         {
-            image: './assets/images/link_logos/Li-In-Bug.png',
+            image: LiLogo,
             link: 'https://www.linkedin.com/in/kiefer-levine-38844920b/',
             alt: 'The LinkedIn logo'
         },
         {
-            image: './assets/images/link_logos/f_logo_RGB-blue_58.png',
+            image: FbLogo,
             link: 'https://www.facebook.com/profile.php?id=100002973256310',
             alt: 'The Facebook logo'
         }
