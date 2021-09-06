@@ -2,7 +2,7 @@
 ## Description
 My second-iteration web development portfolio, built using the React front-end framework.
 
-![Preview image of the application](/assets/images/preview.png)
+![Preview image of the application](/public/assets/images/preview.png)
 
 ## Table of Contents
 
