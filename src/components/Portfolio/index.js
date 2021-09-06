@@ -44,11 +44,11 @@ const Portfolio = () => {
     ];
 
     return (
-        <Container className='Portfolio Page'>
+        <Container className='Portfolio Page shadow'>
             <Row>
                 {projectsArr.map((project, i) => {
                     return (
-                        <Col xs={4} key={`card-${i}`}>
+                        <Col xs={6} md={4} lg={3} xl={2} key={`card-${i}`}>
                             <Project
                                 title={project.title}
                                 image={project.image}
