@@ -14,7 +14,7 @@ const Footer = () => {
         },
         {
             image: LiLogo,
-            link: 'https://www.linkedin.com/in/kiefer-levine-38844920b/',
+            link: 'https://www.linkedin.com/in/kiefer-levine/',
             alt: 'The LinkedIn logo'
         },
         {
