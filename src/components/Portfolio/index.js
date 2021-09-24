@@ -8,10 +8,17 @@ import bardicPrev from '../../assets/images/project_previews/bardic.png';
 import crunchTimePrev from '../../assets/images/project_previews/crunchtime.png';
 import techblogPrev from '../../assets/images/project_previews/techblog.png';
 import weatherPrev from '../../assets/images/project_previews/weather.png';
+import crazyPrev from '../../assets/images/project_previews/crazy-tetris.png'
 
 const Portfolio = () => {
 
     const projectsArr = [
+        {
+            title: 'Crazy Tetrominos',
+            image: crazyPrev,
+            liveLink: 'https://crazy-tetrominos.herokuapp.com/',
+            repoLink: 'https://github.com/RookiePrime/crazy-tetris'
+        },
         {
             title: 'Tarokka Deck',
             image: tarokkaPrev,
@@ -47,7 +54,7 @@ const Portfolio = () => {
             image: weatherPrev,
             liveLink: 'https://rookieprime.github.io/weather-dashboard/',
             repoLink: 'https://github.com/RookiePrime/weather-dashboard'
-        }
+        },
     ];
 
     return (
