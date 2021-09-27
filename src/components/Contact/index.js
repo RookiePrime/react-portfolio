@@ -26,6 +26,7 @@ const Contact = () => {
         <Container className='Contact Page shadow'>
             <Form>
                 <h2>Contact Me!</h2>
+                <div className='contact'>You can contact me at <a href='mailto:kiefer.levine@protonmail.com'>kiefer.levine@protonmail.com</a>, or use this form to send me a message directly.</div>
                 <Form.Group controlId='formBasicName'>
                     <Form.Label>Enter your name</Form.Label>
                     <Form.Control type='name' name='name' placeholder='Your name goes here!' defaultValue={name} onBlur={handleChange} />
@@ -43,7 +44,7 @@ const Contact = () => {
                         <p className='error-text'>{errorMessage}</p>
                     </div>
                 )}
-                <Button type='submit' onClick={e => { e.preventDefault() }}>Submit</Button>
+                <Button type='submit' disabled onClick={e => { e.preventDefault() }}>Submit</Button>
             </Form>
         </Container>
     );

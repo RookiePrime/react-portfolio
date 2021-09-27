@@ -84,6 +84,14 @@ a:focus {
 /* About styling ends here */
 
 
+/* Contact styling begins here */
+.contact a:hover,
+.contact a:focus {
+  color: var(--secondary-color);
+}
+/* Contact styling ends here */
+
+
 /* Resume styling begins here */
 .Resume .list-group-item {
   background-color: var(--primary-color);
